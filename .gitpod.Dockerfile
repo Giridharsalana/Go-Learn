@@ -3,8 +3,7 @@ FROM gitpod/workspace-full
 RUN sudo apt-get install fish -y && \
     sudo apt-get update
 
-RUN sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable  && \
-    sudo apt-get update && \
+RUN sudo apt-get update && \
     sudo apt-get install golang 
 
 RUN sudo chsh -s /usr/bin/fish
