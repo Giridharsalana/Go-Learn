@@ -1,10 +1,9 @@
 FROM gitpod/workspace-full
 
 RUN sudo apt-get install fish -y && \
-    sudo apt-get update
+    sudo apt-get update -y
 
-RUN sudo apt-get update -y && \
-    sudo apt-get install golang -y 
+RUN sudo apt-get install golang -y 
 
 RUN sudo chsh -s /usr/bin/fish
 
